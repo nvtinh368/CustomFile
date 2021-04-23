@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3961A9E52632D408000D0741 /* CustomFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3961A9E32632D408000D0741 /* CustomFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3961A9ED2632D447000D0741 /* CustomFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961A9EC2632D447000D0741 /* CustomFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3961A9E02632D408000D0741 /* CustomFile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomFile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3961A9E32632D408000D0741 /* CustomFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFile.h; sourceTree = "<group>"; };
 		3961A9E42632D408000D0741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3961A9EC2632D447000D0741 /* CustomFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3961A9E32632D408000D0741 /* CustomFile.h */,
 				3961A9E42632D408000D0741 /* Info.plist */,
+				3961A9EC2632D447000D0741 /* CustomFile.swift */,
 			);
 			path = CustomFile;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					3961A9DF2632D408000D0741 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3961A9ED2632D447000D0741 /* CustomFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		3961A9E92632D408000D0741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4L68UJ2JT3;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaka.newGame.CustomFile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		3961A9EA2632D408000D0741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4L68UJ2JT3;
